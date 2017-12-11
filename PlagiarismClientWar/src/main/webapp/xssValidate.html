@@ -1,0 +1,161 @@
+
+<script type="text/javascript">
+	var firstAttempt = true;
+
+	function initCap(str) {
+	    var result="";
+	    str=str.replace(/\s+/g,' ')
+	    if(str.indexOf(" ")!=0)
+	    {
+	        var words=str.split(" ");
+	        for(var i=0;i<words.length;i++)
+	        {
+	            var str= words[i];
+	            words[i]=str.substring(0,1).toUpperCase() + str.substring(1,str.length).toLowerCase();
+	        }
+	    } 
+	    return words.toString().replace(/,/g," ");
+	} 
+
+	$('.numsOrLetters').keypress(function (event) {
+	    if ($(this).val() == "") {
+	        firstAttempt = true; //reset
+	    }
+	    if($(this).val().length>=20)
+            event.preventDefault();
+	    if (firstAttempt) {
+	        firstAttempt = false;
+	        if (!((event.which >= 48 && event.which <= 57) ||(event.which >= 65 && event.which <= 90) ||(event.which >= 97 && event.which <= 122)))
+	            event.preventDefault();
+	       
+	        
+	    } else {
+	        var enteredValue=$(this).val();
+	        if(isNaN(enteredValue))
+	        {
+	            if (event.which > 32 && (event.which < 65 || event.which > 90) && (event.which < 97 || event.which > 122))
+	            event.preventDefault();
+	   			 
+	        }
+	        else
+	        {
+	            if (event.which < 48 || event.which > 57) {
+	            	if(event.which!=8)
+	                event.preventDefault();
+	            }
+	        }
+	    }
+	}); 
+
+	$('.onlyNums').keypress(function (e) {
+
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+			e.preventDefault();
+ 		}
+	});
+	$('.onlyNums').bind('cut copy paste', function(e) {
+		e.preventDefault();
+	});
+
+	$('.numsAndLettersNA').keypress(function (e) {
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57) && (e.which != 110) && (e.which != 97)) {
+			e.preventDefault();
+ 		}
+	});
+	$('.numsAndLettersNA').bind('cut copy paste', function(e) {
+		e.preventDefault();
+	});
+
+	$('.numsAndLettersBoth').keypress(function (e) {
+		
+		if (e.which != 8 && e.which != 0 && ((e.which < 48&&e.which !=32) || e.which > 57) && (e.which < 65 || e.which > 90) && (e.which < 97 || e.which > 122)) {
+			e.preventDefault();
+ 		}
+	});
+	$('.numsAndLettersBoth').bind('cut copy paste', function(e) {
+		e.preventDefault();
+	});
+
+	$('.onlyLetters').keypress(function (event) 
+			{
+            if (event.which > 32 && (event.which < 65 || event.which > 90) && (event.which < 97 || event.which > 122))
+            	event.preventDefault();
+        	
+	});
+	
+	$('.onlyLetters').bind('cut copy paste', function(e) {
+		e.preventDefault();
+	});
+
+	$('.onlyLetters').blur(function () {
+	    $(this).val(initCap($(this).val().trim().split(/\s+/g).toString().replace(/,/g, ' ')));
+	});
+	</script>
+<script type="text/javascript">
+	//Preventing !"$%*+:;<=>?^_{}|~
+	var spChars = [ 33, 34, 36, 37, 42, 43, 58, 59, 60, 61, 62, 63, 94, 95,
+			123, 124, 125, 126 ];
+
+	function search(val) {
+		var x = $.grep(spChars, function(n, i) {
+			return n == val;
+		});
+		if (x.length == 1)
+			return true;
+		else
+			return false;
+	}
+	
+	$('.xssSecure').blur(function(){
+			$(this).val(initCap($(this).val()));
+		});
+
+	$('.numsOrLetters').blur(function(){
+		if(isNaN($(this).val()))
+			$(this).val(initCap($(this).val()));
+	});
+
+	$('.xssSecure').keypress(function(event) {
+		if(""==$(this).val().trim())
+			$(this).val($(this).val().trim());
+		
+		if (search(event.which)) {
+		
+			event.preventDefault();
+		}
+	});
+	$('.xssSecureNoInitCap').keypress(function(event) {
+		if(""==$(this).val().trim())
+			$(this).val($(this).val().trim());
+		
+		if (search(event.which)) {
+		
+			event.preventDefault();
+		}
+	});
+	$('.xssSecure').bind('cut copy paste', function(e) {
+		e.preventDefault();
+	});
+</script>
+
+<script>
+var feedbackSpChars = [13,32,33,34,38,39,40,41,44,46,58,59,91,93];
+function feedbackAllowedCharSearch(val) {
+	var x = $.grep(feedbackSpChars, function(n, i) {
+		return n == val;
+	});
+	if (x.length == 1)
+		return true;
+	else
+		return false;
+}
+
+$('.feedBackLettersChars').keypress(function(event) {
+if(feedbackAllowedCharSearch(event.which)){}
+	else{
+		   if (event.which != 8 && event.which != 0 && ((event.which < 48&&event.which !=32) || event.which > 57) && (event.which < 65 || event.which > 90) && (event.which < 97 || event.which > 122)) {
+			event.preventDefault();
+ 		}
+}
+});
+</script>

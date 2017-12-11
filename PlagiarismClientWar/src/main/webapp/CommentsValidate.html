@@ -1,0 +1,26 @@
+<script>
+var maxTextLimit = 250;
+//code to apply any character entered in textarea start
+$('#commentsBox').keypress(function(event) {
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+	var scope = angular.element('#commentsBox').scope();
+	if ($('#commentsBox').val().length >= maxTextLimit && keycode != 8)
+		event.preventDefault();
+	else {
+		scope.cancelComments = $('#commentsBox').val();
+		scope.commentBoxTextlength = $('#commentsBox').val().length;
+		scope.$apply();
+	}
+
+}).keyup(function(event) {
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+	var scope = angular.element('#commentsBox').scope();
+	if ($('#commentsBox').val().length > maxTextLimit && keycode != 8)
+		event.preventDefault();
+	else {
+		scope.cancelComments = $('#commentsBox').val();
+		scope.commentBoxTextlength = $('#commentsBox').val().length;
+		scope.$apply();
+	}
+});
+</script>

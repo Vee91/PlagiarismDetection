@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="PlagiarismEar">
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="commons-beanutils.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-beanutils.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-reflection-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/java-reflection-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="batik-css-1.6-1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/batik-css-1.6-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/aopalliance.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-tx-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gson-2.2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/gson-2.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/mail-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-digester.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-digester-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcommon-1.0.15.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jcommon-1.0.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jaxb-api-2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XmlSchema-1.4.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/XmlSchema-1.4.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-kernel-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis2-kernel-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/wss4j.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-context-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-aop-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-3.2.4.release.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-jms-3.2.4.release.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="servlet-api-3.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/servlet-api-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axiom-api-1.2.13.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axiom-api-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-web-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-security-web-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis-1.4.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-stax-api_1.0_spec-1.0.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/geronimo-stax-api_1.0_spec-1.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis-wsdl4j-1.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis-wsdl4j-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.mail-api-1.4.6.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/javax.mail-api-1.4.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.8.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-digester-1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.3.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-codec-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-lang3-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axiom-impl-1.2.13.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axiom-impl-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-3.2.4.release.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-context-support-3.2.4.release.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-jdbc-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/httpcore-4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-expression-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-adb-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis2-adb-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-orm-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="groovy-all-2.0.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/groovy-all-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.17.1-GA.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/javassist-3.17.1-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PlagiarismWar.war" deploy-path="/" handle="module:/resource/PlagiarismWar/PlagiarismWar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-core-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-beans-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/log4j.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-transport-local-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis2-transport-local-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="alfresco-repository-3.3.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/alfresco-repository-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jx.xl.rc.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jx.xl.rc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SymJavaAPI.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/SymJavaAPI.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlsec-1.4.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/xmlsec-1.4.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-lang.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-core-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-security-core-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-config-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-security-config-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="batik-dom-1.6-1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/batik-dom-1.6-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jdt-compiler-3.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jdt-compiler-3.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dfc.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/dfc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-as-naming-7.1.0.Final.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jboss-as-naming-7.1.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="apache-velocity-velocity-1.5.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/apache-velocity-velocity-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="alfresco-web-client-3.3.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/alfresco-web-client-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjweaver-1.8.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/aspectjweaver-1.8.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jxl.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jxl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cglib-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/cglib-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-webmvc-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-dbcp-1.4.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-dbcp-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-fileupload-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-test-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.jms.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/javax.jms.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-saaj-api_1.3_spec-1.0.2.Final-redhat-2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jboss-saaj-api_1.3_spec-1.0.2.Final-redhat-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="iText-2.1.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/iText-2.1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-discovery-0.4.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-discovery-0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.springsource.org.objectweb.asm-3.2.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/com.springsource.org.objectweb.asm-3.2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/ojdbc6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="alfresco-web-service-client-3.3.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/alfresco-web-service-client-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="esapi-2.1.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/esapi-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="neethi-3.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/neethi-3.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.4.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-io-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/activation-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-collections.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-pool-1.5.5.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-pool-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-httpclient-3.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/commons-httpclient-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wsdl4j-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/wsdl4j-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasperreports-6.1.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jasperreports-6.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjrt-1.8.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/aspectjrt-1.8.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl-2.1.7.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jaxb-impl-2.1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-json.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/java-json.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/spring-web-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjtools-1.6.11.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/aspectjtools-1.6.11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-transport-http-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/axis2-transport-http-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jackson-databind-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jedis-2.1.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jedis-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jackson-core-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="json-simple-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/json-simple-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/jackson-annotations-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javaparser-core-3.5.4-SNAPSHOT.jar" deploy-path="/lib" handle="module:/classpath/lib/PlagiarismLib/javaparser-core-3.5.4-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PlagiarismServices.jar" deploy-path="/lib" handle="module:/resource/PlagiarismServices/PlagiarismServices">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+      
+    </wb-module>
+</project-modules>

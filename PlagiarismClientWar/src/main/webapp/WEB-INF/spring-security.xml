@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<security:http security="none" pattern="/javax.faces.resource/*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/images/*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/img/*"
+		use-expressions="true" />
+	<security:http security="none" pattern="/rfRes/*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/*.js*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.properties*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/**/*.otf*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/*.png*"
+		use-expressions="true">
+
+	</security:http>
+	<security:http security="none" pattern="/**/*.css*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.woff*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.svg*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.ttf*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.eot*"
+		use-expressions="true">
+	</security:http>
+	<security:http security="none" pattern="/**/*.ecss*"
+		use-expressions="true">
+	</security:http>
+
+
+	<security:http security="none" pattern="/pages/plagiarism/*.html"
+		use-expressions="true">
+	</security:http>
+
+
+	<security:http pattern="/**/login*" security="none"></security:http>
+	<security:http pattern="/**/index*" security="none"></security:http>
+
+	<security:http pattern="/**/header*" security="none"></security:http>
+
+	<security:http pattern="/**/footer*" security="none"></security:http>
+	<security:http pattern="/**/error*" security="none"></security:http>
+	<security:http pattern="/**/ConfigError*" security="none"></security:http>
+
+	<security:http entry-point-ref="preAuthenticatedProcessingFilterEntryPoint"
+		use-expressions="true" pattern="/**">
+
+
+		<security:intercept-url pattern="/rest/welcome/*"
+			access="permitAll" />
+		<security:intercept-url pattern="/rest/**"
+			access="permitAll" />
+
+
+	</security:http>
+
+	<security:authentication-manager alias="authenticationManager">
+
+	</security:authentication-manager>
+
+
+	<beans:bean id="preAuthenticatedProcessingFilterEntryPoint"
+		class="org.springframework.security.web.authentication.Http403ForbiddenEntryPoint" />
+
+	<beans:bean id="authorizationLoggerListener"
+		class="org.springframework.security.access.event.LoggerListener" />
+
+	<beans:bean id="authenticationLoggerListener"
+		class="org.springframework.security.access.event.LoggerListener" />
+
+</beans:beans>

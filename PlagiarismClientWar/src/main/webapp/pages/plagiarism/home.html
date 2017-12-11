@@ -1,0 +1,186 @@
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-1">
+		<img src="appResources/img/logo.png" style="padding-top: 10px">
+	</div>
+	<div class="col-sm-11">
+		<h2 style="color: white">Plagiarism Detector</h2>
+	</div>
+	</div>
+	</div>
+</nav>
+
+
+
+
+<div class="container-fluid">
+
+	<br> <br> <br>
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-4" style="padding-right: 0">
+		 
+			
+	<ng-form method="POST" enctype="multipart/form-data"
+		data-file-upload="options">
+	<div 
+		style="padding: 0px 10px 0px 10px;">
+		<div class="row content-main-row" style="margin-bottom: 10px;">
+			<div class="col-md-7 col-lg-7 text-left padding-zero" id="uploadRow">
+				<img src="appResources/img/UploadIcon.png"
+					style="margin-bottom: 8px;" /> <span class="doc-upload-header"
+					translate>Upload Documents</span>
+			</div>
+			</div>
+		<div class="row content-main-row" style="margin-bottom: 10px;">
+			<div>
+				<div id="errorMessageForFile" class="error" style="color:red;"></div>
+				<div id="dragandrophandler" class="doc-upload-body" style=" align-content: center; width: 100%;
+    				padding: 10px; border: 2px solid #aaaaaa; border-radius: 6px;min-height: 200px"	translate>
+					<div style="text-align: center; white-space:pre;" id="f1">Drop file1 here</div> 
+					
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin: 0px;">
+				<div class="col-md-10 col-lg-10"
+						style="color: #555555; text-align: left; vertical-align: bottom; word-wrap: break-word; font-size: 10px; font-weight: bold; padding-left: 0px; margin-top: 3px">
+						<span>Supported file type : java </span> 
+						<br /> 
+						<span>File size limit : 100 KB</span>
+				</div>
+				<div class="col-md-2 col-lg-2" id="uploadDocId"
+						style="padding-right: 0px; margin-top: 3px">
+					<label> 
+					<input name="file" type="file" id="singleFile"	
+							style="width: 83px; max-height: 23px; overflow: hidden;">
+					<div style="cursor: pointer"
+								data-toggle="tooltip"
+								title="Click to Upload"></div>
+					</label>
+
+					<script>
+						$(document).ready(function(){
+						$('#uploadDocId').tooltip({
+		  				selector: "div[data-toggle='tooltip']"
+						}); 
+						});
+					</script>
+				</div>
+		</div>
+			
+
+			
+		
+	</div>
+	</ng-form>
+			
+		</div>
+		<div class="col-sm-2"
+			style="padding-left: 0; padding-right: 0; padding-top: 8%; text-align:center;">
+			
+			<label ng-show="model.result" style="font-size: 300%">Result</label>
+			<br> <label ng-show="model.result" style="font-size: 150%">
+				 {{model.result}}</label>
+
+
+		</div>
+		<div class="col-sm-4" style="padding-left: 0">
+
+		<ng-form method="POST" enctype="multipart/form-data"
+		data-file-upload="options">
+		<div style="padding: 0px 10px 0px 10px;">
+		<div class="row content-main-row" style="margin-bottom: 10px;">
+			<div class="col-md-7 col-lg-7 text-left padding-zero" id="uploadRow">
+				<img src="appResources/img/UploadIcon.png"
+					style="margin-bottom: 8px;" /> <span class="doc-upload-header"
+					translate>Upload Documents</span>
+			</div>
+		</div>
+		
+		<div class="row content-main-row" style="margin-bottom: 10px;">
+			<div>
+				<div id="errorMessageForFile1" class="error" style="color:red;"></div>
+				<div id="dragandrophandler1" class="doc-upload-body" style=" align-content: center; width: 100%;
+    				padding: 10px; border: 2px solid #aaaaaa; border-radius: 6px;min-height: 200px"	translate>
+					<div style="text-align: center; white-space:pre;" id="f2">Drop file2 here</div> 
+					
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin: 0px;">
+			<div class="col-md-10 col-lg-10"
+						style="color: #555555; text-align: left; vertical-align: bottom; word-wrap: break-word; font-size: 10px; font-weight: bold; padding-left: 0px; margin-top: 3px">
+						<span>Supported file type : java </span> <br /> <span>File
+							size limit : 100 KB</span>
+			</div>
+			<div class="col-md-2 col-lg-2" id="uploadDocId1"
+						style="padding-right: 0px; margin-top: 3px">
+				<label> 
+				<input name="file" type="file" id="singleFile1"
+							
+							style="width: 83px; max-height: 23px; overflow: hidden;">
+				<div style="cursor: pointer"
+								data-toggle="tooltip"
+								title="Click to Upload"></div>
+				</label>
+
+				<script>
+					$(document).ready(function(){
+					$('#uploadDocId1').tooltip({
+		 			 selector: "div[data-toggle='tooltip']"
+					}); 
+					});
+				</script>
+				</div>
+		</div>
+		
+			</div>
+		
+		
+	</ng-form>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+
+	
+	<br>
+	<br>
+<div class="row" >
+		<div class="col-sm-1"></div>
+			<div class="row doc-upload-conatainer col-sm-10"
+				style="margin: 0px; padding-left: 0px; padding-right: 0px; background-color: white;">
+					<div id="uploadedDivName"></div>
+					<div id="uploadedDocDiv0"></div>
+					<div id="uploadedDocDiv1"></div>
+		</div>
+		<div class="col-sm-1"></div>
+</div>
+<div class="row" style="height: 70px;" >
+	<div class="alert alert-danger" role="alert" id="errorMessage" ng-show="model.error"></div>
+	</div>
+	<div class="row" style="text-align: center;" >
+	<button type="button" id="submit" class="btn btn-danger"
+		ng-click="model.submitFiles(file1, file2);">Run Plagarism
+		Check</button>
+		</div>
+	<br>
+<textarea type="text" id="filecontents1" rows="10" style="display:none;" ></textarea>
+<textarea type="text" id="filecontents2" rows="10" style="display:none;" ></textarea>
+<br>
+<!--  
+<div>
+<div class="col-xs-5" id="f1" style="border:1px solid black;text-align: left">
+</div>
+<div class="col-xs-2"></div>
+<div class="col-xs-5" id="f2" style="border:1px solid black;text-align: left">
+</div>
+</div>
+-->
+
+<footer style="text-align: center; padding-top: 10px">
+  <p> &copy : Team 23, Contact information: <a href="mailto:team-23.cs5500.github.ccs.neu.edu">
+  Team-23</a>.</p>
+</footer> 
+</div>

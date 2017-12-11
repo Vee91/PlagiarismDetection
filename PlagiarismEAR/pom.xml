@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>PlagiarismEar</groupId>
+	<artifactId>PlagiarismEar</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>ear</packaging>
+	<parent>
+		<groupId>com.plagiarism</groupId>
+		<artifactId>plagiarism</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<earSourceDirectory>EarContent</earSourceDirectory>
+					<version>5</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<modules>
+						<webModule>
+							<groupId>PlagiarismWar</groupId>
+							<artifactId>PlagiarismWar</artifactId>
+							<bundleFileName>PlagiarismWar.war</bundleFileName>
+						</webModule>
+					</modules>
+					<archive>
+						<manifestEntries>
+							<buildinfo>${user.name}</buildinfo>
+						</manifestEntries>
+					</archive>
+				</configuration>
+
+			</plugin>
+						<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<version>7.7.Final</version>
+			</plugin>
+		</plugins>
+		<finalName>${project.artifactId}</finalName> 
+	</build>
+	<dependencies>
+		
+		<dependency>
+			<groupId>PlagiarismWar</groupId>
+			<artifactId>PlagiarismWar</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+</project>
